@@ -41,7 +41,7 @@ public class RpcTest {
         messageDo.setId(3);
 
         MessageDo messageDo1 = HttpUtils.http("http://localhost:8080/rpc/demo/hello")
-                .serializer(ProtostuffBytesSerializer.getInstance())
+                .serializer(ProtostuffBytesSerializer.getDefault())
                 .header(ContentTypes.HEADER_CONTENT_TYPE, ContentTypes.PROTOBUF_VALUE)
                 .header(ContentTypes.HEADER_ACCEPT, ContentTypes.PROTOBUF_VALUE)
                 .bodyOfBean(messageDo)

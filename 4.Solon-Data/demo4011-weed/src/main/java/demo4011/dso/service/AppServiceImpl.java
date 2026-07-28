@@ -24,12 +24,12 @@ public class AppServiceImpl implements AppService {
         sqlMapper1.appx_add();
     }
 
-    @Tran
+    @Transaction
     public void addApp2(){
         sqlMapper1.appx_add();
     }
 
-    @Tran
+    @Transaction
     @Override
     public void addApp2_2() {
         sqlMapper1.appx_add();

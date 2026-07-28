@@ -253,7 +253,7 @@ public class SqlTest {
         assert 22 == (int) val;
     }
 
-    @Tran
+    @Transaction
     @Test
     public void update2_tran() throws SQLException {
         SqlBuilder sqlSpec = new SqlBuilder();

@@ -19,7 +19,7 @@ public class HttpParam4Test extends HttpTester {
         //走json通过，这个格式会有问题
         String json = "{id:1,name:'noear',date:'2021-12-12'}";
 
-        String json2 =  path("/demo2/param4/json").bodyJson(json).post();
+        String json2 =  path("/demo2/param4/json").bodyOfJson(json).post();
 
         ONode oNode2 = ONode.ofJson(json2);
 
@@ -32,7 +32,7 @@ public class HttpParam4Test extends HttpTester {
         //走json通过，这个格式OK
         String json = "{id:1,name:'noear',date:'2021-12-12T12:12:12'}";
 
-        String json2 =  path("/demo2/param4/json").bodyJson(json).post();
+        String json2 =  path("/demo2/param4/json").bodyOfJson(json).post();
 
         ONode oNode2 = ONode.ofJson(json2);
 

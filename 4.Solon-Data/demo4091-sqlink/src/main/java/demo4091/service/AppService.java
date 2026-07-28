@@ -68,7 +68,7 @@ public class AppService {
                 .first();
     }
 
-    @Tran
+    @Transaction
     public void addApp2() {
         addApp();
     }

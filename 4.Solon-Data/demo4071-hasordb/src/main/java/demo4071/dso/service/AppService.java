@@ -23,7 +23,7 @@ public class AppService {
         sqlMapper1.appx_add();
     }
 
-    @Tran
+    @Transaction
     public void addApp2(){
         sqlMapper1.appx_add();
     }

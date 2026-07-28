@@ -24,12 +24,12 @@ public class AppService2 {
         sqlMapper1.appx_add();
     }
 
-    @Tran
+    @Transaction
     public void addApp2(){
         sqlMapper1.appx_add();
     }
 
-    @Tran
+    @Transaction
     public void addApp2_2() {
         sqlMapper1.appx_add();
         throw new RuntimeException("不让加");

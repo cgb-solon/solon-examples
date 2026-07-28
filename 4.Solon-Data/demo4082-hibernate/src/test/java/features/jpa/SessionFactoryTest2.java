@@ -21,7 +21,7 @@ public class SessionFactoryTest2 {
     SessionFactory sessionFactory;
 
     @Test
-    @Transaction // 必须开启，由于hibernate默认开启事务，必须添加@Tran，让solon进行管理
+    @Transaction // 必须开启，由于hibernate默认开启事务，必须添加@Transaction，让solon进行管理
     public void test() throws InterruptedException {
         User user = new User();
         user.setUsername("test");

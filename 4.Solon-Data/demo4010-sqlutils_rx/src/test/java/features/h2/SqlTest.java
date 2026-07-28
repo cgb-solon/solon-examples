@@ -257,7 +257,7 @@ public class SqlTest {
         assert 22 == (int) val;
     }
 
-    @Tran
+    @Transaction
     @Test
     public void update2_tran() {
         SqlBuilder sqlSpec = new SqlBuilder();

@@ -17,7 +17,7 @@ public class HelloServiceLocalImp implements HelloService {
     @Inject
     private SqlUtils sqlUtils;
 
-    @Tran
+    @Transaction
     @Override
     public void insertData(String code) throws Exception {
         System.out.println("local xid: " + RootContext.getXID());

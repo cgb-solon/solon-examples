@@ -22,7 +22,7 @@ public class HelloServiceLocalImp implements HelloService {
     @Inject
     private SqlUtils sqlUtils;
 
-    @Tran
+    @Transaction
     @Override
     @TwoPhaseBusinessAction(name = "LocalTccActionTwo", commitMethod = "commit", rollbackMethod = "rollback")
     public boolean prepare(BusinessActionContext actionContext, String code) throws Exception {

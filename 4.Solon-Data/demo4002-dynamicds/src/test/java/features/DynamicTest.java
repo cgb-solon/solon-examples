@@ -60,7 +60,7 @@ public class DynamicTest extends HttpTester {
     }
 
     @Test
-    @Tran
+    @Transaction
     public void tran() throws Exception{
         dynamicService.test_add("db_rock0", 1111);
         dynamicService.test_add("db_rock1", 2222);
